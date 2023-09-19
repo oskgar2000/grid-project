@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.parent-area {
+  display: grid;
+  grid-template-areas: "one one one one" "two two three three" "two two four five";
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(3, 20px);
+}
+
+.item:nth-child(1) {
+  grid-area: one;
+  background-color: green;
+}
+
+.item:nth-child(2) {
+  grid-area: two;
+  background-color: red;
+}
+
+.item:nth-child(3) {
+  grid-area: three;
+  background-color: grey;
+}
+
+.item:nth-child(4) {
+  grid-area: four;
+  background-color: gold;
+}
+
+.item:nth-child(5) {
+  grid-area: five;
+  background-color: blue;
+}
+
+@media (max-width: 768px) {
+  .parent-area {
+    grid-template-areas: "one" "two" "three" "four" "five";
+  }
+}/*# sourceMappingURL=main.css.map */
