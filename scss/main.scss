@@ -163,6 +163,7 @@ grid-template-areas:
 "two two four five";
 grid-template-columns: repeat(5,1fr);
 grid-template-rows: repeat(3,20px);
+background-color: gold;
 }
 
 .item:nth-child(1){
